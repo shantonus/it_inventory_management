@@ -42,7 +42,7 @@ STATIC_DIR = RESOURCE_DIR / "static"
 DATA_DIR = Path(os.environ.get("IT_INVENTORY_DATA_DIR", str(APP_DIR / "data")))
 DB_PATH = DATA_DIR / "inventory.db"
 HOST = "127.0.0.1"
-PORT = 8000
+PORT = int(os.environ.get("IT_INVENTORY_PORT", "8000"))
 
 SESSIONS = {}
 SESSION_LOCK = threading.Lock()
