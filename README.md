@@ -166,4 +166,3 @@ This is a simple way for a new user to explore the app:
 The working app stores data locally in `data/inventory.db`, so it can be moved by copying the whole project folder.
 
 For my own local use, I also maintain a separate portable runtime version that bundles Python directly inside the project folder. That larger runtime is intentionally not included in the GitHub portfolio copy.
-
