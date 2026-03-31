@@ -1,5 +1,7 @@
 # IT Inventory Manager
 
+![Dashboard](images/dashboard.png)
+
 Offline IT inventory management software built as a portfolio project for small teams that need asset tracking, assignment history, account control, and reporting without relying on a separate database server.
 
 ## Why This Project
@@ -25,11 +27,71 @@ This project was designed to show a practical IT-focused workflow rather than a 
 - Reusable saved suggestions with in-place CRUD for repeated fields
 - Local, portable data file for easy transfer between machines
 
-## Screenshots
+A quick look at the system interface and key features:
 
-### Dashboard
+## 📸 Screenshots
 
-![Dashboard](images/2.png)
+### 🔐 Login & Dashboard
+
+<p align="center">
+  <img src="images/login.png" width="45%">
+  <img src="images/dashboard.png" width="45%">
+</p>
+
+---
+
+### 💻 Asset Management
+
+<p align="center">
+  <img src="images/assets.png" width="45%">
+  <img src="images/asset-management.png" width="45%">
+</p>
+
+---
+
+### 👥 Team Members
+
+<p align="center">
+  <img src="images/team-members.png" width="45%">
+</p>
+
+---
+
+### 🔄 Assignments (Check-in / Check-out)
+
+<p align="center">
+  <img src="images/assignments.png" width="45%">
+  <img src="images/assign-asset.png" width="45%">
+</p>
+
+---
+
+### 🔑 Account Management
+
+<p align="center">
+  <img src="images/accounts.png" width="45%">
+  <img src="images/account-management.png" width="45%">
+</p>
+
+---
+
+### ⚙️ System Controls
+
+<p align="center">
+  <img src="images/change-password.png" width="45%">
+  <img src="images/create-record.png" width="45%">
+</p>
+
+---
+
+### 🧩 Smart Field Management
+
+<p align="center">
+  <img src="images/manage-devices.png" width="45%">
+  <img src="images/modify-devices.png" width="45%">
+  <br><br>
+  <img src="images/brands-management.png" width="45%">
+</p>
 
 ## Tech Stack
 
