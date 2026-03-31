@@ -25,6 +25,12 @@ This project was designed to show a practical IT-focused workflow rather than a 
 - Reusable saved suggestions with in-place CRUD for repeated fields
 - Local, portable data file for easy transfer between machines
 
+## Screenshots
+
+### Dashboard
+
+![Dashboard](images/2.png)
+
 ## Tech Stack
 
 - Python
