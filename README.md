@@ -1,37 +1,54 @@
 # IT Inventory Manager
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![SQLite](https://img.shields.io/badge/Database-SQLite-green)
+![Platform](https://img.shields.io/badge/Platform-Desktop%20%7C%20Web-lightgrey)
+![Status](https://img.shields.io/badge/Status-Portfolio%20Project-orange)
+
+A portable offline IT asset management system designed for small teams to track devices, assignments, and operational records without external infrastructure.
+
 ![Dashboard](images/dashboard.png)
 
-Offline IT inventory management software built as a portfolio project for small teams that need asset tracking, assignment history, account control, and reporting without relying on a separate database server.
+---
 
 ## Why This Project
 
-This project was designed to show a practical IT-focused workflow rather than a generic CRUD demo. It focuses on the kinds of tasks an IT specialist or support administrator actually handles:
+This project was built to reflect real IT support workflows rather than a simple CRUD demo. It focuses on the kinds of tasks an IT specialist or support administrator handles daily:
 
-- tracking devices and asset tags
-- assigning equipment to people
-- managing account roles and password updates
-- keeping assignment history
-- exporting operational records for reporting
-- running fully offline in a portable local setup
+- Tracking devices and asset tags  
+- Assigning equipment to users  
+- Managing account roles and password updates  
+- Maintaining assignment history  
+- Exporting operational records  
+- Running fully offline in a portable environment  
+
+---
 
 ## Highlights
 
-- Fully offline inventory system
-- Python backend with local SQLite storage
-- Desktop mode with `pywebview`
-- Browser mode with a built-in local web server
-- Asset, team member, assignment, and account management
-- Search, filtering, and sorting across major sections
-- CSV import/export and styled PDF export
-- Reusable saved suggestions with in-place CRUD for repeated fields
-- Local, portable data file for easy transfer between machines
+- Fully offline, portable asset management system  
+- Python + SQLite backend with local data storage  
+- Desktop interface powered by `pywebview`  
+- Asset, assignment, account, and team management  
+- Advanced search, filtering, and sorting  
+- CSV import/export and PDF report generation  
+- Reusable field suggestions with inline CRUD  
 
-A quick look at the system interface and key features:
+---
 
-## 📸 Screenshots
+## Key Capabilities
 
-### 🔐 Login & Dashboard
+- Track and manage IT assets (laptops, phones, printers, etc.)  
+- Assign and return devices with full history tracking  
+- Manage user accounts and roles (Admin, User, Super Admin)  
+- Maintain reusable field values for faster data entry  
+- Generate reports and export operational data  
+
+---
+
+## Screenshots
+
+### Login & Dashboard
 
 <p align="center">
   <img src="images/login.png" width="45%">
@@ -40,7 +57,7 @@ A quick look at the system interface and key features:
 
 ---
 
-### 💻 Asset Management
+### Asset Management
 
 <p align="center">
   <img src="images/assets.png" width="45%">
@@ -49,7 +66,7 @@ A quick look at the system interface and key features:
 
 ---
 
-### 👥 Team Members
+### Team Members
 
 <p align="center">
   <img src="images/team-members.png" width="45%">
@@ -57,7 +74,7 @@ A quick look at the system interface and key features:
 
 ---
 
-### 🔄 Assignments (Check-in / Check-out)
+### Assignments (Check-in / Check-out)
 
 <p align="center">
   <img src="images/assignments.png" width="45%">
@@ -66,7 +83,7 @@ A quick look at the system interface and key features:
 
 ---
 
-### 🔑 Account Management
+### Account Management
 
 <p align="center">
   <img src="images/accounts.png" width="45%">
@@ -75,7 +92,7 @@ A quick look at the system interface and key features:
 
 ---
 
-### ⚙️ System Controls
+### System Controls
 
 <p align="center">
   <img src="images/change-password.png" width="45%">
@@ -84,7 +101,7 @@ A quick look at the system interface and key features:
 
 ---
 
-### 🧩 Smart Field Management
+### Smart Field Management
 
 <p align="center">
   <img src="images/manage-devices.png" width="45%">
@@ -93,40 +110,53 @@ A quick look at the system interface and key features:
   <img src="images/brands-management.png" width="45%">
 </p>
 
+---
+
 ## Tech Stack
 
-- Python
-- SQLite
-- HTML
-- CSS
-- Vanilla JavaScript
-- `pywebview`
-- `reportlab`
+- Python  
+- SQLite  
+- HTML  
+- CSS  
+- Vanilla JavaScript  
+- `pywebview`  
+- `reportlab`  
+
+---
 
 ## Main Features
 
-- Dashboard
-  View high-level asset counts, recent assignment history, and recent asset activity.
-- Asset Management
-  Create, edit, assign, return, and remove inventory records.
-- Team Member Profiles
-  Track the people who receive and use devices.
-- Accounts and Roles
-  Manage login accounts with `Super Admin`, `Admin`, and `User` roles.
-- Search and Filters
-  Quickly narrow down data in the major tables.
-- Saved Suggestions
-  Reuse values such as device name, category, role, status, condition, location, and department.
-- Import and Export
-  Import CSV data and export clean CSV or PDF reports.
-- Password Controls
-  Allow admins to reset account passwords and let each user change their own password.
+- **Dashboard**  
+  View asset counts, assignment history, and recent activity  
+
+- **Asset Management**  
+  Create, edit, assign, return, and manage inventory  
+
+- **Team Members**  
+  Maintain user/device-holder profiles  
+
+- **Accounts & Roles**  
+  Manage access levels and authentication  
+
+- **Search & Filters**  
+  Quickly find records across all modules  
+
+- **Saved Suggestions**  
+  Reuse common values (device, category, location, etc.)  
+
+- **Import / Export**  
+  CSV import/export and PDF reporting  
+
+- **Password Controls**  
+  Admin reset and user password updates  
+
+---
 
 ## Run Options
 
 ### Option 1: Browser Mode
 
-1. Install Python 3.
+1. Install Python 3  
 2. Install dependencies:
 
 ```bash
@@ -139,11 +169,13 @@ pip install -r requirements.txt
 python app.py
 ```
 
-4. Open [http://127.0.0.1:8000](http://127.0.0.1:8000)
+4. Open http://127.0.0.1:8000  
+
+---
 
 ### Option 2: Desktop Mode
 
-1. Install Python 3.
+1. Install Python 3  
 2. Install dependencies:
 
 ```bash
@@ -156,81 +188,54 @@ pip install -r requirements.txt
 python desktop.py
 ```
 
+---
+
 ### Windows Launchers
 
-- `run.bat`: browser mode
-- `run_desktop.bat`: desktop mode
-- `app.pyw`: browser mode without a visible terminal window
-- `desktop.pyw`: desktop mode without a visible terminal window
+- `run.bat`: browser mode  
+- `run_desktop.bat`: desktop mode  
+- `app.pyw`: browser mode (no terminal window)  
+- `desktop.pyw`: desktop mode (no terminal window)  
 
-## Default Login
+---
 
-- Username: `admin`
-- Password: `admin`
+## Default Login Credentials
+
+| Username | Password |
+|----------|----------|
+| admin    | admin    |
+
+---
 
 ## First-Time Walkthrough
 
-This is a simple way for a new user to explore the app:
+1. Sign in with the default admin account  
+2. Open the Dashboard to review totals and activity  
+3. Add team members  
+4. Add assets (laptops, phones, etc.)  
+5. Assign assets to users  
+6. Manage accounts and roles  
+7. Use search, filters, and sorting  
+8. Manage saved field values using inline edit tools  
+9. Export reports as CSV or PDF  
 
-1. Sign in with the default admin account.
-2. Open the Dashboard to review totals and recent activity.
-3. Go to `Team Members` and create or edit employee/device-holder profiles.
-4. Open `Assets` and add inventory items such as laptops, monitors, phones, or printers.
-5. Use the `Assignments` screen to check out a device to a team member and later check it back in.
-6. Open `Accounts` to manage login access, roles, and password resets.
-7. Use the search bar, filters, and sorting controls on each main data screen.
-8. Click the small pencil icons beside lookup-backed fields to manage saved suggestion values.
-9. Use import/export controls to move data in or generate CSV and PDF reports.
-
-## How Key Actions Work
-
-### Adding an Asset
-
-- Go to `Assets`
-- Click `New Asset`
-- Fill in asset details such as asset tag, category, device name, brand, model, serial number, status, and location
-- Save the record
-
-### Assigning a Device
-
-- Go to `Assignments`
-- Click `Assign Asset`
-- Pick an asset and a team member
-- Add optional checkout notes
-- Save the assignment
-
-### Returning a Device
-
-- Go to `Assignments`
-- Find the active assignment
-- Use the return/check-in action
-- Add optional return notes
-
-### Managing Roles and Saved Suggestions
-
-- Click the small pencil icon beside supported fields
-- Use the popup to add, edit, delete, or select saved values
-- This works for repeated values such as category, device name, department, role, status, condition, and location
-
-### Importing and Exporting
-
-- CSV import is available on the main record sections
-- CSV export creates spreadsheet-friendly records
-- PDF export generates a styled table report for presentation or printing
+---
 
 ## Project Structure
 
-- `app.py`: backend server, API routes, SQLite integration
-- `desktop.py`: desktop launcher with `pywebview`
-- `static/index.html`: base UI layout
-- `static/styles.css`: UI styling and responsive layout
-- `static/app.js`: frontend behavior and view rendering
-- `data/`: local runtime database files
-- `seed_dummy_data.py`: helper for generating test/demo records
-- `recover_admin.py`: helper to restore admin access if needed
+- `app.py`: backend server and API routes  
+- `desktop.py`: desktop launcher (`pywebview`)  
+- `static/index.html`: UI layout  
+- `static/styles.css`: styling  
+- `static/app.js`: frontend logic  
+- `data/`: local database storage  
+- `seed_dummy_data.py`: generate sample data  
+- `recover_admin.py`: restore admin access  
+
+---
 
 ## Portability
 
-The working app stores data locally in `data/inventory.db`, so it can be moved by copying the whole project folder.
+All data is stored locally in `data/inventory.db`, allowing the application to be moved by copying the project folder.
 
-For my own local use, I also maintain a separate portable runtime version that bundles Python directly inside the project folder. That larger runtime is intentionally not included in the GitHub portfolio copy.
+A separate portable runtime version (including Python) can also be created for full standalone use.
