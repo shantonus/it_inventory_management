@@ -229,7 +229,6 @@ python desktop.py
 - `static/styles.css`: styling  
 - `static/app.js`: frontend logic  
 - `data/`: local database storage  
-- `seed_dummy_data.py`: generate sample data  
 - `recover_admin.py`: restore admin access  
 
 ---
